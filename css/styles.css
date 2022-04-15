@@ -1,0 +1,186 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --black-color: #000000;
+    --dark-background: #2F303A;
+    --light-background: #F5F4FA;    
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+}
+/* ------------Шапка-------------- */
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logoaccent {
+    color: var(--accent-color);
+}
+.logo-dark {
+    color: var(--black-color);
+}
+.logo-light {
+    color: var(--primary-white-color);
+}
+.link {
+    text-decoration:none;
+    color: inherit;
+    }
+
+.header-link:hover, .header-link:focus {
+    color: var(--accent-color);
+} 
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .list {
+      list-style-type: none;
+  }
+  .header-nav-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--title-text-color);
+  }
+  .header-contacts-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .current {
+      color: var(--accent-color);
+  }
+  /* ---------------Hero---------------- */
+  .hero {
+      background: var(--dark-background);
+  }
+  .hero-headline {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
+  .hero-button {
+    font-family: inherit;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    cursor:pointer
+  }
+    .hero-button:hover, .hero-button:focus{
+    background-color: #188CE8;
+    }
+
+  .section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;  
+    color: var(--title-text-color);
+  }
+  /* <!-- Особенности --> */
+  .qualities-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.146px;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
+
+  .qualities-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  /* <!-- Наша команда --> */
+  .team-section {
+    background-color: var(--light-background)
+  }
+  .team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;     
+    text-align: center;
+    color: var(--title-text-color);
+  }
+  .team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+/* -----------------Подвал---------------- */
+  .footer-background {
+     background: var(--dark-background);
+      }
+  .address {
+    font-style: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .address-map {
+      color: var(--primary-white-color);
+  }
+  .address-text {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-link:hover, .footer-link:focus {
+    color: var(--accent-color);
+  }
+ /* -----------Портфолио-------------- */
+    .button-item {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--title-text-color);
+    background-color: var(--light-background);
+    cursor:pointer
+    }
+    .button-item:active {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    }
+    .portfolio-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--title-text-color);
+    }
+    .porfolio-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.88;
+
+    }
