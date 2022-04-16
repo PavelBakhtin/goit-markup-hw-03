@@ -13,7 +13,22 @@ body {
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
 }
+h1,h2,h3,h4,h5,h6,p { 
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: tomato 2px;
+}
 /* ------------Шапка-------------- */
+
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .logo {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -31,6 +46,26 @@ body {
 .logo-light {
     color: var(--primary-white-color);
 }
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.site-nav {
+  display: flex;
+}
+
+.site-nav-text+.site-nav-text {
+  margin-left: 50px;
+}
+.site-contacts-text+.site-contacts-text {
+  margin-left: 50px;
+}
+.contacts-nav {
+  display: flex;
+  margin-left: auto;
+}
 .link {
     text-decoration:none;
     color: inherit;
@@ -39,6 +74,10 @@ body {
 .header-link:hover, .header-link:focus {
     color: var(--accent-color);
 } 
+.header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 .visually-hidden {
     position: absolute;
@@ -53,15 +92,20 @@ body {
     overflow: hidden;
   }
   .list {
+      padding: 0;
+      margin: 0;
       list-style-type: none;
   }
-  .header-nav-text {
+  .site-nav-text {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: var(--title-text-color);
   }
-  .header-contacts-text {
+  .site-contacts-text {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -72,8 +116,14 @@ body {
   /* ---------------Hero---------------- */
   .hero {
       background: var(--dark-background);
+    
   }
   .hero-headline {
+    width: 696px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -82,15 +132,20 @@ body {
     text-transform: uppercase;
     color: var(--primary-white-color);
   }
+  .hero-button-div {
+    text-align: center;
+    padding-bottom: 200px;
+  }
   .hero-button {
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     font-family: inherit;
     background-color: var(--accent-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
+   
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
     cursor:pointer
@@ -107,24 +162,64 @@ body {
     color: var(--title-text-color);
   }
   /* <!-- Особенности --> */
+  .qualities {
+    display: flex;
+    justify-content: space-between;  
+    padding-bottom: 96px;
+    padding-top: 96px;
+        
+  }
+  
+
   .qualities-title {
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.146px;
+    line-height: 1.146;
     text-transform: uppercase;
     color: var(--title-text-color);
   }
 
   .qualities-text {
+    width: 270px;
+    padding-top: 3px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+  }
+  /* Чем мы занимаемся */
+  .activity-title {
+    margin-bottom: 50px;
+  }
+  .activity {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
   }
   /* <!-- Наша команда --> */
   .team-section {
     background-color: var(--light-background)
   }
-  .team-title {
+  .team   {
+    padding-top: 94px;
+    margin-bottom: 50px;
+  }
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .team-list li {
+    background-color: var(--primary-white-color);
+    margin-bottom: 94px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .team-list img {
+    margin-bottom: 30px;
+  }
+  .team-name {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;     
@@ -132,20 +227,30 @@ body {
     color: var(--title-text-color);
   }
   .team-text {
+    padding-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
   }
 /* -----------------Подвал---------------- */
-  .footer-background {
+  .footer {
      background: var(--dark-background);
       }
+  .footer-nav {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+ 
   .address {
+    margin-top: 20px;
     font-style: inherit;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+  }
+  .address-list li:not(:last-child) {
+    margin-bottom: 9px;
   }
   .address-map {
       color: var(--primary-white-color);
@@ -158,6 +263,7 @@ body {
   }
  /* -----------Портфолио-------------- */
     .button-item {
+      padding: 6px 22px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -165,13 +271,17 @@ body {
     text-align: center;
     color: var(--title-text-color);
     background-color: var(--light-background);
-    cursor:pointer
+    border-radius: 4px;
+    cursor:pointer;
+    border: 0;
     }
     .button-item:active {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     }
     .portfolio-title {
+      padding-top: 20px;
+      margin-left: 24px;
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
@@ -179,8 +289,39 @@ body {
         color: var(--title-text-color);
     }
     .porfolio-text {
+      margin-top: 4px;
+      margin-bottom: 20px;
+      margin-left: 24px;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.88;
 
     }
+    .filters {
+      display: flex;
+      margin-top: 94px;
+      justify-content: center;
+      margin-bottom: 50px;
+         }
+    .filters li:not(:first-child) {
+      margin-left: 8px;
+    }
+    .porfolio-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -30px;
+      margin-left: -30px;
+      margin-bottom: 94px;
+    }
+  .porfolio-list li {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-top: 30px;
+    margin-left: 30px;
+    
+      
+  }
+  .portfolio-info {
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+  }
