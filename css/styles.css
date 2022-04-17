@@ -21,15 +21,22 @@ h1,h2,h3,h4,h5,h6,p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: tomato 2px;
+  
 }
 /* ------------Шапка-------------- */
 
 .header {
   border-bottom: 1px solid #ECECEC;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
+  margin-right: 93px;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -49,22 +56,24 @@ h1,h2,h3,h4,h5,h6,p {
 .header-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
+ 
 }
-.site-nav {
+.header-nav .list {
+  display: flex;
+  
+}
+.contacts-nav .list {
   display: flex;
 }
-
 .site-nav-text+.site-nav-text {
   margin-left: 50px;
 }
 .site-contacts-text+.site-contacts-text {
-  margin-left: 50px;
-}
+   margin-left: 50px;
+} 
 .contacts-nav {
-  display: flex;
-  margin-left: auto;
+ display: flex;
+ margin-left: auto;
 }
 .link {
     text-decoration:none;
@@ -74,10 +83,6 @@ h1,h2,h3,h4,h5,h6,p {
 .header-link:hover, .header-link:focus {
     color: var(--accent-color);
 } 
-.header-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
 .visually-hidden {
     position: absolute;
@@ -98,8 +103,7 @@ h1,h2,h3,h4,h5,h6,p {
   }
   .site-nav-text {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -116,6 +120,8 @@ h1,h2,h3,h4,h5,h6,p {
   /* ---------------Hero---------------- */
   .hero {
       background: var(--dark-background);
+      padding-top: 200px;
+      padding-bottom: 200px;
     
   }
   .hero-headline {
@@ -123,7 +129,7 @@ h1,h2,h3,h4,h5,h6,p {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -134,7 +140,7 @@ h1,h2,h3,h4,h5,h6,p {
   }
   .hero-button-div {
     text-align: center;
-    padding-bottom: 200px;
+    
   }
   .hero-button {
     padding: 10px 32px;
@@ -163,11 +169,13 @@ h1,h2,h3,h4,h5,h6,p {
   }
   /* <!-- Особенности --> */
   .qualities {
-    display: flex;
-    justify-content: space-between;  
     padding-bottom: 96px;
     padding-top: 96px;
-        
+  }
+  .qualities .list {
+    display: flex;
+    justify-content: space-between;  
+            
   }
   
 
@@ -188,20 +196,27 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 1.71;
   }
   /* Чем мы занимаемся */
+  .activity {
+  padding-bottom: 94px;
+  }
   .activity-title {
     margin-bottom: 50px;
   }
-  .activity {
+  .activity .list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 94px;
+    align-items: center;
+    
   }
+  
   /* <!-- Наша команда --> */
   .team-section {
-    background-color: var(--light-background)
+    background-color: var(--light-background);
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   .team   {
-    padding-top: 94px;
+    
     margin-bottom: 50px;
   }
   .team-list {
@@ -211,7 +226,7 @@ h1,h2,h3,h4,h5,h6,p {
   }
   .team-list li {
     background-color: var(--primary-white-color);
-    margin-bottom: 94px;
+    
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
@@ -236,12 +251,10 @@ h1,h2,h3,h4,h5,h6,p {
 /* -----------------Подвал---------------- */
   .footer {
      background: var(--dark-background);
+     padding-top: 60px;
+     padding-bottom: 60px;
       }
-  .footer-nav {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
- 
+  
   .address {
     margin-top: 20px;
     font-style: inherit;
@@ -262,6 +275,10 @@ h1,h2,h3,h4,h5,h6,p {
     color: var(--accent-color);
   }
  /* -----------Портфолио-------------- */
+ .portfolio {
+   padding-top: 94px;
+   padding-bottom: 94px;
+ }
     .button-item {
       padding: 6px 22px;
     font-family: inherit;
@@ -280,7 +297,7 @@ h1,h2,h3,h4,h5,h6,p {
     background-color: var(--accent-color);
     }
     .portfolio-title {
-      padding-top: 20px;
+      
       margin-left: 24px;
         font-weight: 700;
         font-size: 18px;
@@ -290,7 +307,6 @@ h1,h2,h3,h4,h5,h6,p {
     }
     .porfolio-text {
       margin-top: 4px;
-      margin-bottom: 20px;
       margin-left: 24px;
         font-weight: 400;
         font-size: 16px;
@@ -299,7 +315,6 @@ h1,h2,h3,h4,h5,h6,p {
     }
     .filters {
       display: flex;
-      margin-top: 94px;
       justify-content: center;
       margin-bottom: 50px;
          }
@@ -311,7 +326,7 @@ h1,h2,h3,h4,h5,h6,p {
       flex-wrap: wrap;
       margin-top: -30px;
       margin-left: -30px;
-      margin-bottom: 94px;
+      
     }
   .porfolio-list li {
     flex-basis: calc((100% - 90px) / 3);
@@ -321,6 +336,8 @@ h1,h2,h3,h4,h5,h6,p {
       
   }
   .portfolio-info {
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
